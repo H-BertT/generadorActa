@@ -11,7 +11,10 @@
                 <div class="form-group">
                     <label for="persona1">Persona 1:</label>
                     <select class="form-control" name="persona1" required onchange="updateDetails('persona1', 'details1')">
+                        
                         <option value="" selected disabled>Selecciona una persona</option>
+
+
                         @foreach($personas as $persona)
                             <option value="{{ $persona->id }}" {{ old('persona1') == $persona->id ? 'selected' : '' }}>
                                 {{ $persona->nombres }} {{ $persona->primer_apellido }} {{ $persona->segundo_apellido }}
