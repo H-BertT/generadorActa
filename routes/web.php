@@ -22,8 +22,6 @@ Route::get('/acta/imprimir/{id}', [ActaController::class, 'imprimirActa'])->name
 Route::delete('acta/destroy/{id}', [ActaController::class, 'destroy'])->name('acta.destroy');
 
 Route::get('acta/crear-invitacion/{id}', [CrearInvitacionController::class, 'create'])->name('acta.crearInvitacion');
-// Route::post('acta/crear-invitacion', [CrearInvitacionController::class, 'store'])->name('acta.crearInvitacion.store');
-
 
 Route::get('correos', [CrearInvitacionController::class, 'index'])->name('correos.index');
 Route::post('correos', [CrearInvitacionController::class, 'store'])->name('correos.store');

@@ -15,6 +15,6 @@
 <p>Lugar del Matrimonio: {{ $data['lugar'] }}</p>
 
 {{-- Otros detalles de la boda --}}
-<p>Te esperamos en:</p>
+<p>Te esperamos :3</p>
 
 @endsection
